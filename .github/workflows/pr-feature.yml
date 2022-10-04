@@ -1,0 +1,11 @@
+name: "[FEAT] Test"
+
+on:
+  pull_request:
+    branches: development
+
+jobs:
+  test:
+    if: startsWith(github.head_ref, 'feature')
+    steps:
+      - run: echo "test"
