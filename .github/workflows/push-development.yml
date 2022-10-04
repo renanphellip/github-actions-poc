@@ -1,0 +1,13 @@
+name: "[DEV] Pull Request"
+
+on:
+  push:
+    branches: development
+
+jobs:
+  pr-to-development:
+    name: PR to Master Branch
+    uses: renanphellip/reusable-workflows/.github/workflows/pull-request.yml@main
+    with:
+      target-branch: master
+    secrets: inherit
