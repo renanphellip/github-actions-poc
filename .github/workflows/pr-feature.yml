@@ -5,7 +5,7 @@ on:
     branches: development
 
 jobs:
-  test:
+  feat-test:
     if: startsWith(github.head_ref, 'feature')
     runs-on: ubuntu-latest
     steps:
