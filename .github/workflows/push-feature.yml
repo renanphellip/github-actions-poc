@@ -1,0 +1,13 @@
+name: "[FEAT] Pull Request"
+
+on:
+  push:
+    branches: feature**
+
+jobs:
+  pr-to-development:
+    name: PR to Development Branch
+    uses: renanphellip/reusable-workflows/.github/workflows/pull-request.yml@main
+    with:
+      target-branch: development
+    secrets: inherit
