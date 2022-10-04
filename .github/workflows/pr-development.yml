@@ -5,7 +5,7 @@ on:
     branches: master
 
 jobs:
-  test:
+  dev-test:
     if: github.head_ref == 'development'
     runs-on: ubuntu-latest
     steps:
